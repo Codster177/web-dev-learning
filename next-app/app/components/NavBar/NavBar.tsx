@@ -1,15 +1,15 @@
 import React from 'react'
 import NavBarItem from './NavBarItem';
 
-const NavBarCss = "navbar bg-base-100 shadow-sm";
+const NavBarCss = "navbar fixed bg-base-100 shadow-sm -ml-4 -mt-4";
 
 interface Props{
     websiteName: string;
 }
 
 const NavBar = (props: Props) => {
-    let projectsList = ["Symptomatch", "Bound by the Book", "Time Management Calculator"]
-    let gamesList = ["Boomerang Bunnie", "Growing Up", "Floral Felines", "Stray Spirit"]
+    const projectsList = ["Symptomatch", "Bound by the Book", "Time Management Calculator"]
+    const gamesList = ["Boomerang Bunnie", "Growing Up", "Floral Felines", "Stray Spirit"]
 
     return (
     <div className={NavBarCss}>

@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 interface Props{
     children: string;
     dropDown?: boolean;
@@ -10,30 +9,35 @@ interface Props{
 function navBarHelper(children: string, dropDown: boolean, dropDownList: string[]){
     if (dropDown == false)
     {
-        return <li><a>{children}</a></li>
+        return (
+            <ul tabIndex={0} className='menu menu-horizontal px-1 mr-3'>
+                <li><a>{children}</a></li>
+            </ul>
+        )
     }
     else
     {
-        return (<li>
-            <details>
+        return (
+        <ul tabIndex={0} className='menu menu-horizontal px-1 mr-3'>
+        <li>
+            <details className='dropdown'>
                 <summary>{children}</summary>
-                <ul className="dark: bg-gray-700 bg-base-100 rounded-t-none p-2">
+                <ul className="dark:bg-gray-700 bg-base-100 rounded-t-none p-2">
                     {dropDownList.map((item, index)=>(
                         <li key = {index}><a>{item}</a></li>
                     ))}
                 </ul>
             </details>
-            </li>)
+            </li>
+        </ul>)
     }
 }
 
 
 const NavBarItem = ({children, dropDown = false, dropDownList = []}: Props) => {
     return (
-    <div className = "flex-none">
-            <ul className='menu menu-horizontal px-1'>
-                {navBarHelper(children, dropDown, dropDownList)}
-            </ul>
+    <div tabIndex={0} role='button' className = "flex-none">
+            {navBarHelper(children, dropDown, dropDownList)}
     </div>
   )
 }
