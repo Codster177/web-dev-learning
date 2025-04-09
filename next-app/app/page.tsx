@@ -4,6 +4,7 @@ import CenterPiece from "./components/CenterPiece/CenterPiece";
 import StoryCard from "./components/StoryCards/StoryCard";
 import PageWrapper from "./components/PageWrapper/PageWrapper";
 
+
 export default function Home() {
   return (
     <>
@@ -12,7 +13,7 @@ export default function Home() {
         <div className="divider" />
         <StoryCard
           title="About Me"
-          image="https://media.licdn.com/dms/image/v2/D4D12AQFCBd_by-z9dw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1706851421227?e=2147483647&v=beta&t=K_IdssydSB6cneMqKEpDC_BGVFRj73ee9ql-vD5IiRs"
+          image="/Pictures/Avira Astaria Done.png"
           textRight={true}
         >
           I'm a student at the University of Central Florida studying Computer

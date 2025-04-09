@@ -25,7 +25,7 @@ const StoryCard = ({
   let imageBool = image == "" ? false : true;
 
   return (
-    <div className="hero bg-base-200 min-h-150">
+    <div className="hero bg-base-200 min-h-100 px-25">
       <div className={heroDesign()}>
         {imageBool && (
           <img src={image} className="max-w-sm rounded-lg shadow-2xl" />

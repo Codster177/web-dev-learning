@@ -22,7 +22,7 @@ const CenterPiece = ({
   }
 
   return (
-    <div className="hero bg-base-800 min-h-150">
+    <div className="hero bg-base-800 min-h-100 lg:min-h-150">
       <div className="hero-content text-center">
         <div className="max-w-md">
           <h1 className="text-5xl font-bold">{header}</h1>
