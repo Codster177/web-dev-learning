@@ -8,7 +8,9 @@ export default function Home() {
   return (
     <>
       <PageWrapper>
-        <CenterPiece header="Welcome!"></CenterPiece>
+        <CenterPiece header="Welcome!">
+          Venture below to find out more about me!
+        </CenterPiece>
         <div className="divider" />
         <StoryCard
           title="About Me"

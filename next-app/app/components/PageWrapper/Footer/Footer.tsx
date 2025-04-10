@@ -12,7 +12,9 @@ const Footer = () => {
           </h1>
         </Link>
         <a className="link link-hover">Resume</a>
-        <a className="link link-hover">Contact</a>
+        <Link href="/contact">
+          <p className="link link-hover">Contact</p>
+        </Link>
       </aside>
       <nav>
         <Link href="/projects">
@@ -23,9 +25,9 @@ const Footer = () => {
         <a className="link link-hover">Symptomatch</a>
       </nav>
       <nav>
-        {/* <Link href="/projects"> */}
-        <h2 className="footer-title link link-hover pt-10">Games</h2>
-        {/* </Link> */}
+        <Link href="/games">
+          <h2 className="footer-title link link-hover pt-10">Games</h2>
+        </Link>
         <a className="link link-hover">Boomerang Bunny</a>
         <a className="link link-hover">Growing Up</a>
         <a className="link link-hover">Floral Felines</a>
