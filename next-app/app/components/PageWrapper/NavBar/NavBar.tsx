@@ -3,13 +3,12 @@ import Link from "next/link";
 import NavBarItem from "./NavBarItem";
 import NavBarIcon from "./NavBarIcon";
 
-const NavBarCss = "navbar fixed bg-base-100 shadow-sm -ml-4 -mt-4 z-5";
-
 interface Props {
   websiteName?: string;
+  className?: string;
 }
 
-const NavBar = ({ websiteName = "cody-taylor.com" }: Props) => {
+const NavBar = ({ websiteName = "cody-taylor.com", className = "" }: Props) => {
   const projectsList = [
     "Symptomatch",
     "Bound by the Book",
@@ -22,8 +21,17 @@ const NavBar = ({ websiteName = "cody-taylor.com" }: Props) => {
     "Stray Spirit",
   ];
 
+  if (className != "")
+  {
+    className = "navbar fixed bg-base-100 shadow-sm -ml-4 -mt-4 z-5 " + className;
+  }
+  else
+  {
+    className = "navbar fixed bg-base-100 shadow-sm -ml-4 -mt-4 z-5"
+  }
+
   return (
-    <div className={NavBarCss}>
+    <div className={className}>
       <div className="flex-1">
         <Link className="btn btn-ghost text-xl" href={"./"}>
           {websiteName}

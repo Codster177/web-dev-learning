@@ -21,3 +21,24 @@ body {
   padding: 1rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@theme {
+  --animate-wiggle: wiggle 1s ease-in-out infinite;
+  @keyframes wiggle{
+    0%,
+    100%{
+      transform: rotate(-3deg);
+    }
+    50%{
+      transform: rotate(3deg);
+    }
+  }
+  --animate-rainbow: rainbow 10s infinite;
+  @keyframes rainbow{
+    0%{background-color:red;}
+    25%{background-color:yellow}
+    50%{background-color:green}
+    75%{background-color:blue}
+    100%{background-color:red}
+  }
+}

@@ -6,6 +6,7 @@ interface Props{
     linkString: string;
     dropDown?: boolean;
     dropDownList?: string[];
+    className?: string;
 }
 
 function navBarHelper(children: string, dropDown: boolean, dropDownList: string[]){
@@ -44,9 +45,18 @@ function navBarHelper(children: string, dropDown: boolean, dropDownList: string[
 }
 
 
-const NavBarItem = ({children, linkString, dropDown = false, dropDownList = []}: Props) => {
+const NavBarItem = ({children, linkString, dropDown = false, dropDownList = []}: Props, className = "") => {
+    if (className != "")
+    {
+        className = "flex-none hover:animate-wiggle " + className
+    }
+    else
+    {
+        className = "flex-none hover:animate-wiggle"
+    }
+    
     return (
-        <div tabIndex={0} role='button' className = "flex-none">
+        <div tabIndex={0} role='button' className = "flex-none hover:animate-wiggle">
             <Link href={linkString}>
                 {navBarHelper(children, dropDown, dropDownList)}
             </Link>

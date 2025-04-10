@@ -5,6 +5,7 @@ interface Props {
   children?: string;
   buttonBool?: boolean;
   buttonTxt?: string;
+  className?: string;
 }
 
 const CenterPiece = ({
@@ -12,7 +13,17 @@ const CenterPiece = ({
   children = "",
   buttonBool = false,
   buttonTxt = "",
+  className = ""
 }: Props) => {
+  if (className != "")
+  {
+    className = "hero bg-base-800 min-h-100 lg:min-h-200 " + className;
+  }
+  else
+  {
+    className = "hero bg-base-800 min-h-100 lg:min-h-200";
+  }
+
   function buttonHandler() {
     if (buttonBool) {
       return <button className="btn btn-primary">{buttonTxt}</button>;
@@ -22,7 +33,7 @@ const CenterPiece = ({
   }
 
   return (
-    <div className="hero bg-base-800 min-h-100 lg:min-h-200">
+    <div className={className}>
       <div className="hero-content text-center">
         <div className="max-w-md">
           <h1 className="text-5xl font-bold">{header}</h1>
