@@ -11,8 +11,8 @@ interface Props {
 const NavBar = ({ websiteName = "cody-taylor.com", className = "" }: Props) => {
   const projectsList = [
     "Symptomatch",
-    "Bound by the Book",
     "Time Management Calculator",
+    "Bound by the Book",
   ];
   const gamesList = [
     "Boomerang Bunnie",
@@ -33,7 +33,7 @@ const NavBar = ({ websiteName = "cody-taylor.com", className = "" }: Props) => {
   return (
     <div className={className}>
       <div className="flex-1">
-        <Link className="btn btn-ghost text-xl" href={"./"}>
+        <Link className="btn btn-ghost text-xl hover:animate-rainbow" href={"./"}>
           {websiteName}
         </Link>
       </div>
