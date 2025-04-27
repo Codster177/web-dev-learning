@@ -26,6 +26,16 @@ const ProjectsPage = () => {
           instantly. It has taught me a lot about the Qt framework on both the developer and designer sides of the software.
           Go check it out!
         </StoryCard>
+        <StoryCard title="Time Management Calculator" link="https://github.com/Codster177/TimeManagementCalc" linkText="See Project">
+          This is a project I completed for my previous position at the S.I.M. Lab. The goal of the project is to allow students
+          input the time they have allocated for specific activities and allow them to plan the rest of their time accordingly.
+          It taught me much more about using HTML, CSS, and Javascript.
+        </StoryCard>
+        <StoryCard title="Skill Game Project" link="https://github.com/Codster177/skill-game-1" linkText="See Project">
+          The skill game project is a simple game that allowed for me to explore multiplayer networking in Unity. Although the
+          gameplay was simple, this project taught me about lobbying and client-server interaction in the Unity Engine, and it
+          taught me a lot about using AWS for server hosting.
+        </StoryCard>
       </PageWrapper>
     </>
   );

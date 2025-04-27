@@ -1,6 +1,7 @@
 import React from "react";
 import PageWrapper from "../components/PageWrapper/PageWrapper";
 import CenterPiece from "../components/CenterPiece/CenterPiece";
+import StoryCard from "../components/StoryCards/StoryCard";
 
 const GamesPage = () => {
   return (
