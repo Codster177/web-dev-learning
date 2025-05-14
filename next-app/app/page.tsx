@@ -3,6 +3,7 @@ import NavBar from "./components/PageWrapper/NavBar/NavBar";
 import CenterPiece from "./components/CenterPiece/CenterPiece";
 import StoryCard from "./components/StoryCards/StoryCard";
 import PageWrapper from "./components/PageWrapper/PageWrapper";
+import HomeTimeline from "./components/HomeTimeline/HomeTimeline";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
           software engineering, machine learning, and game development. I
           absolutely love seeing a project come together.
         </StoryCard>
+        <HomeTimeline />
       </PageWrapper>
     </>
   );
